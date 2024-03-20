@@ -29,8 +29,7 @@ steps:
       - "1"
       - "--max-instances"
       - "1"
-      - "--args"
-      - "https://mainnet.helius-rpc.com/?api-key=8636d5f7-c957-4848-bea6-dbfa8602620e"
+      - "--args=--host 0.0.0.0 https://mainnet.helius-rpc.com/?api-key=8636d5f7-c957-4848-bea6-dbfa8602620e"
 images:
   - "gcr.io/$PROJECT_ID/drift-gateway:$BRANCH_NAME"
 options:
